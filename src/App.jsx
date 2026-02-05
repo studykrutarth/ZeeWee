@@ -9,7 +9,7 @@ export default function App() {
 
   return (
     <div className="app">
-      <h1>🛌 Sleep Dashboard</h1>
+      <h1>ZeeWee Sleep Dashboard</h1>
       <Metrics data={data} />
       <div className="charts">
         <SleepBarChart data={data} />
