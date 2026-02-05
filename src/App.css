@@ -1,0 +1,70 @@
+.app {
+  background: rgba(0,0,0,0.55);
+  padding: 1.5rem;
+  border-radius: 18px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.app {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+ 
+}
+
+
+body {
+  margin: 0;
+  color: white;
+  font-family: system-ui;
+}
+
+@media (min-width: 769px) {
+  body {
+    background: url("/desktop.jpg") center/cover fixed no-repeat;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background: url("/mobile.jpg") center/cover fixed no-repeat;
+  }
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 1rem;
+  border-radius: 12px;
+}
+.charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+td, th {
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .metrics, .charts {
+    grid-template-columns: 1fr;
+  }
+}
